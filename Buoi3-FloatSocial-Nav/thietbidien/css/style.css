@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*
+    * Thường sẽ định nghĩa
+    * 1: font-family-main: ;
+    * 2: color-main: ;
+    * 3: text-font-size: ;
+    * 4: h1-font-size: ;
+    * 5: h2-font-size ...: ; 
+    */
+
+    --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-main: #0e4a9a;
+    --text-font-size: 16px;
+    --h1-font-size: 30px;
+    --h2-font-size: 20px;
+    --h3-font-size: 15px;
+    --padding-session: 20px 0px;
+}
+
+html {
+    font-family: var(--font-family-main);
+}
+
+header {
+    background: #eee;
+}
+
+header .header-info-company {
+    display: flex;
+    text-decoration: none;
+    color: #0e4a9a;
+}
+
+.header-info-company .header-logo-company {}
+
+.header-logo-company img {
+    width: 80px;
+    height: 80px;
+}
+
+.header-info-company .header-text-company {}
+
+.header-text-company h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-text-company i {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header .header-social-company {}
+
+.header-social-company ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-social-company li {}
+
+.header-social-company a {}
+
+.header-social-company a:hover {
+    border: solid 1px black;
+}
+
+.header-social-company img {
+    width: 40px;
+    height: 40px;
+}
+/* END_HEADER */
+
+/* NAV */
+nav {
+    background: #0e4a9a;
+    color: white;
+    height: 44px;
+}
+
+nav .nav-title-category {
+    background: #e3411f;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+@media(max-width: 991px) {
+    nav .nav-title-category {
+        background: unset;
+    }
+}
+
+.nav-title-category i {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.nav-title-category span {}
+
+nav .link-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+}
+
+.link-nav .link-nav-main {}
+
+.link-nav-main ul {
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.link-nav-main li {}
+
+.link-nav-main a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+.link-nav-main a.active {
+    color: #ffc700;
+}
+
+.link-nav .link-nav-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.link-nav-search .search-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background: white;
+    height: 100%;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 0px 1px 4px 0px rgba(84, 84, 84, 1);
+    color: #0e4a9a;
+    align-items: center;
+}
+
+.link-nav-search i{}
+
+.search-page select {
+    height: 28px;
+}
+
+.search-page input {
+    height: 28px;
+    margin: 0px 5px;
+}
+
+.search-page i {}
+/* END_NAV */
+
+/* FOOTER */
+footer {}
+
+footer .footer-list-link {
+    padding: var(--padding-session);
+    display: block;
+}
+
+.footer-list-link .footer-list-new{}
+
+.footer-list-link .footer-info-company{}
+
+.footer-list-link .footer-list-file{}
+
+.footer-list-link h3{
+    font-size: var(--h3-font-size) !important;
+    color: var(--color-main);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-list-link h3::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #eee;
+}
+
+.footer-list-link ul{
+    list-style: none;
+}
+
+.footer-list-link li{
+    border-bottom: solid 1px #eee;
+    padding-bottom: 5px;
+}
+
+.footer-list-link a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.4s;
+    display: block;
+}
+
+.footer-list-link a:hover{
+    color: #007bff;
+    transform: translateX(7px);
+}
+
+.footer-list-link i{}
+
+.footer-list-link span{}
+/* END_FOOTER */
+
+/* FLOAT_SOCAIL */
+.float-social {
+    margin-left: 5px;
+    position: fixed;
+    top: 30%;
+}
+
+.float-social ul {}
+
+.float-social li {}
+
+.float-social a {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+    margin-bottom: 5px;
+    border-radius: 31px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.55), 0 2px 3px rgba(0, 0, 0, 0.4);
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #0000001f);
+}
+
+.float-social img {
+    width: 30px;
+    height: 30px;
+}
+/* END_FLOAT_SOCIAL */

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*
+    * Thường sẽ định nghĩa
+    * 1: font-family-main: ;
+    * 2: color-main: ;
+    * 3: text-font-size: ;
+    * 4: h1-font-size: ;
+    * 5: h2-font-size ...: ; 
+    */
+
+    --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-main: #0e4a9a;
+    --text-font-size: 16px;
+    --h1-font-size: 30px;
+    --h2-font-size: 20px;
+    --h3-font-size: 15px;
+    --padding-session: 20px 0px;
+}
+
+html {
+    font-family: var(--font-family-main);
+}
+
+header {
+    background: #eee;
+}
+
+header .header-info-company {
+    display: flex;
+    text-decoration: none;
+    color: #0e4a9a;
+}
+
+.header-info-company .header-logo-company {}
+
+.header-logo-company img {
+    width: 80px;
+    height: 80px;
+}
+
+.header-info-company .header-text-company {}
+
+.header-text-company h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-text-company i {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header .header-social-company {}
+
+.header-social-company ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-social-company li {}
+
+.header-social-company a {}
+
+.header-social-company a:hover {
+    border: solid 1px black;
+}
+
+.header-social-company img {
+    width: 40px;
+    height: 40px;
+}
+
+/* FOOTER */
+footer {}
+
+footer .footer-list-link {
+    padding: var(--padding-session);
+}
+
+.footer-list-link .footer-list-new{}
+
+.footer-list-link .footer-info-company{}
+
+.footer-list-link .footer-list-file{}
+
+.footer-list-link h3{
+    font-size: var(--h3-font-size) !important;
+    color: var(--color-main);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-list-link h3::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #eee;
+}
+
+.footer-list-link ul{
+    list-style: none;
+}
+
+.footer-list-link li{}
+
+.footer-list-link a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.4s;
+    display: block;
+}
+
+.footer-list-link a:hover{
+    color: #007bff;
+    transform: translateX(7px);
+}
+
+.footer-list-link i{}
+
+..footer-list-link span{}
+/* END_FOOTER */

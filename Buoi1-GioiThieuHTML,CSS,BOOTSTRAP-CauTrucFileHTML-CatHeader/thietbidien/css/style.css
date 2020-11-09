@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #eee;
+}
+
+header .header-info-company {
+    display: flex;
+    text-decoration: none;
+    color: #0e4a9a;
+}
+
+.header-info-company .header-logo-company {}
+
+.header-logo-company img {
+    width: 80px;
+    height: 80px;
+}
+
+.header-info-company .header-text-company {}
+
+.header-text-company h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-text-company i {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header .header-social-company {}
+
+.header-social-company ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-social-company li {}
+
+.header-social-company a {}
+
+.header-social-company img {
+    width: 40px;
+    height: 40px;
+}
